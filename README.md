@@ -1,5 +1,17 @@
 ### Hi there 👋
 
+
+this is Esonhugh_skyworship's Github 
+
+
+📫 How to reach me: Esonhughoutside@gmail.com or t.me/esonhugh_skywalker
+
+
+🌱 I’m currently learning web,python and bash,even the most basic one : C/C++
+
+
+Thank u for your watching and star.
+
 <!--
 **Esonhugh/Esonhugh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
