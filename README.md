@@ -4,6 +4,9 @@
 this is Esonhugh_skyworship's Github 
 
 
+this repo is not only my github_description but also the notes on it.
+
+
 📫 How to reach me: Esonhughoutside@gmail.com or t.me/esonhugh_skywalker
 
 
