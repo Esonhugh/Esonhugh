@@ -1,0 +1,41 @@
+# Directories
+/includes/
+/misc/
+/modules/
+/profiles/
+/scripts/
+/themes/
+# Files
+/CHANGELOG.txt
+/cron.php
+/INSTALL.mysql.txt
+/INSTALL.pgsql.txt
+/INSTALL.sqlite.txt
+/install.php
+/INSTALL.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/update.php
+/UPGRADE.txt
+/xmlrpc.php
+# Paths (clean URLs)
+/admin/
+/comment/reply/
+/filter/tips/
+/node/add/
+/search/
+/user/register/
+/user/password/
+/user/login/
+/user/logout/
+# Paths (no clean URLs)
+/?q=admin/
+/?q=comment/reply/
+/?q=filter/tips/
+/?q=node/add/
+/?q=search/
+/?q=user/password/
+/?q=user/register/
+/?q=user/login/
+/?q=user/logout/
+

