@@ -1,0 +1,26 @@
+# Directories
+ /core/
+ /profiles/
+# Files
+ /README.txt
+ /web.config
+# Paths (clean URLs)
+ /admin/
+ /comment/reply/
+ /filter/tips
+ /node/add/
+ /search/
+ /user/register/
+ /user/password/
+ /user/login/
+ /user/logout/
+# Paths (no clean URLs)
+ /index.php/admin/
+ /index.php/comment/reply/
+ /index.php/filter/tips
+ /index.php/node/add/
+ /index.php/search/
+ /index.php/user/password/
+ /index.php/user/register/
+ /index.php/user/login/
+ /index.php/user/logout/
