@@ -15,6 +15,8 @@ this repo is not only my github_description but also the notes on it.
 
 Thank u for your watching and star.
 
+INFO:[Esonhugh's Blog](https://esonhugh.github.io/tabs/about)
+
 ![Esonhugh's github stats](https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true)
 
 ### - I like

