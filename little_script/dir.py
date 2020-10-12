@@ -27,17 +27,22 @@ class COLOR:
 
 
 def banner():
+    '''
     print('------------------------------------------------------')
     print(f"""{COLOR.INFO}Dictionary scanning being{COLOR.END}""")
     print('------------------------------------------------------')
+    '''
 
 def end_banner():
+    '''
     print('-------------------------------------------------------')
+    '''
 
 def header():
+    '''
     print(" Req. time\t Status \tPath")
     print("="*54)
-
+    '''
 
 def get_date_time(fmt):
     return datetime.datetime.fromtimestamp(time.time()).strftime(fmt)
@@ -84,13 +89,17 @@ def make_requests(url, proxy, timeout, logger):
         message = f'\t Code={status_code}\t{path:50.50s}'
 
         if status_code == 404:
-            #print(f'{COLOR.FORB} [*] {time}{message}{COLOR.END}', end='\r')
-
+            '''
+            print(f'{COLOR.FORB} [*] {time}{message}{COLOR.END}', end='\r')
+            '''
         elif status_code == 403:
-            #print(f'{COLOR.FORB} [!] {time}{message}{COLOR.END}', end='\n')
-
+            '''
+            print(f'{COLOR.FORB} [!] {time}{message}{COLOR.END}', end='\n')
+            '''
         else:
+            '''
             print(f'{COLOR.FOUND} [+] {time}{message}{COLOR.END}', end='\n')
+            '''
 
         logger.info(f'[{status_code}] => {target_url:50.50s}')
 
@@ -117,18 +126,19 @@ def start(func, *args, **kwargs):
 
 
 def done(start_time, qsize):
-    #print('_'*54)
-    #print(f'Time eplapsed: {time.time() - start_time:6.4f} secs')
-    #print(f'Total requests: {qsize}')
-    #print('_'*54)
-
+    """
+    print('_'*54)
+    print(f'Time eplapsed: {time.time() - start_time:6.4f} secs')
+    print(f'Total requests: {qsize}')
+    print('_'*54)
+    """
 
 def scan(url, filename, proxy=None, log_filename=None, timeout=None, threads_num=None):
 
     url = normalize(url)
 
-    #print(f'{COLOR.INFO} Starting at {get_date_time("%Y-%m-%d %H:%M:%S")} {COLOR.END}')
-    #print(f'{COLOR.INFO} Target: {url} {COLOR.END}')
+    print(f'{COLOR.INFO} Starting at {get_date_time("%Y-%m-%d %H:%M:%S")} {COLOR.END}')
+    print(f'{COLOR.INFO} Target: {url} {COLOR.END}')
 
     wordslist = load_words(filename)
 
@@ -136,7 +146,7 @@ def scan(url, filename, proxy=None, log_filename=None, timeout=None, threads_num
 
     logger = get_file_logger(log_filename)
 
-    #header()
+    header()
 
     make_reqs = partial(make_requests, url, proxy=proxy, timeout=timeout, logger=logger)
 
@@ -145,7 +155,7 @@ def scan(url, filename, proxy=None, log_filename=None, timeout=None, threads_num
 
 
 def main():
-    #banner()
+    banner()
     parser = argparse.ArgumentParser(prog="dirScanner", description="Python3.6+ is NEEDED, scan log will store in current direcotry named by date time by default")
     parser.add_argument("url", help="the target you want to scan")
     #parser.add_argument("wordlist_filename", help="the dictionary you want to use in this action", default='wordlist_of_dir.txt')
@@ -163,7 +173,7 @@ def main():
               }
     scan(**params)
 
-    #end_banner()
+    end_banner()
 
 if __name__ == '__main__':
     main()
