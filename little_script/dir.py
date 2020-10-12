@@ -35,14 +35,14 @@ def end_banner():
     print('-------------------------------------------------------')
 
 def header():
-    #print(" Req. time\t Status \tPath")
-    #print("="*54)
+    print(" Req. time\t Status \tPath")
+    print("="*54)
 
 
 def get_date_time(fmt):
     return datetime.datetime.fromtimestamp(time.time()).strftime(fmt)
 
-
+###
 def get_file_logger(log_filename=None):
 
     def _get_logger():
@@ -56,7 +56,7 @@ def get_file_logger(log_filename=None):
     fh.setFormatter(logging.Formatter('%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S'))
     logger.addHandler(fh)
     return logger
-
+###
 
 def normalize(url):
     url = url if url.endswith('/') else url+'/' # check if url is terminated by slash
@@ -79,18 +79,18 @@ def make_requests(url, proxy, timeout, logger):
                                   proxies={'http': proxy, 'https': proxy},
                                   timeout=timeout).status_code
 
-        #time = get_date_time("%H:%M:%S")
+        time = get_date_time("%H:%M:%S")
 
         message = f'\t Code={status_code}\t{path:50.50s}'
 
         if status_code == 404:
-            #print(f'{COLOR.FORB} [*] {time}{message}{COLOR.END}', end='\r')
+#            print(f'{COLOR.FORB} [*] {time}{message}{COLOR.END}', end='\r')
 
         elif status_code == 403:
-            #print(f'{COLOR.FORB} [!] {time}{message}{COLOR.END}', end='\n')
+#            print(f'{COLOR.FORB} [!] {time}{message}{COLOR.END}', end='\n')
 
         else:
-            print(f'{COLOR.FOUND} [+] {message}{COLOR.END}', end='\n')
+            print(f'{COLOR.FOUND} [+] {time}{message}{COLOR.END}', end='\n')
 
         logger.info(f'[{status_code}] => {target_url:50.50s}')
 
@@ -117,18 +117,18 @@ def start(func, *args, **kwargs):
 
 
 def done(start_time, qsize):
-    #print('_'*54)
-    #print(f'Time eplapsed: {time.time() - start_time:6.4f} secs')
-    #print(f'Total requests: {qsize}')
-    #print('_'*54)
+#    print('_'*54)
+#    print(f'Time eplapsed: {time.time() - start_time:6.4f} secs')
+#    print(f'Total requests: {qsize}')
+#    print('_'*54)
 
 
 def scan(url, filename, proxy=None, log_filename=None, timeout=None, threads_num=None):
 
     url = normalize(url)
 
-    #print(f'{COLOR.INFO} Starting at {get_date_time("%Y-%m-%d %H:%M:%S")} {COLOR.END}')
-    #print(f'{COLOR.INFO} Target: {url} {COLOR.END}')
+   # print(f'{COLOR.INFO} Starting at {get_date_time("%Y-%m-%d %H:%M:%S")} {COLOR.END}')
+   # print(f'{COLOR.INFO} Target: {url} {COLOR.END}')
 
     wordslist = load_words(filename)
 
