@@ -97,9 +97,9 @@ def make_requests(url, proxy, timeout, logger):
             print(f'{COLOR.FORB} [!] {time}{message}{COLOR.END}', end='\n')
             '''
         else:
-            '''
+            
             print(f'{COLOR.FOUND} [+] {time}{message}{COLOR.END}', end='\n')
-            '''
+            
 
         logger.info(f'[{status_code}] => {target_url:50.50s}')
 
@@ -137,8 +137,10 @@ def scan(url, filename, proxy=None, log_filename=None, timeout=None, threads_num
 
     url = normalize(url)
 
+    '''
     print(f'{COLOR.INFO} Starting at {get_date_time("%Y-%m-%d %H:%M:%S")} {COLOR.END}')
     print(f'{COLOR.INFO} Target: {url} {COLOR.END}')
+    '''
 
     wordslist = load_words(filename)
 
