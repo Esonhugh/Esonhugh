@@ -98,7 +98,7 @@ def make_requests(url, proxy, timeout, logger):
             '''
         else:
             
-            print(f'{COLOR.FOUND} [+] {time}{message}{COLOR.END}', end='\n')
+            print(f'{COLOR.FOUND} [+] {message}{COLOR.END}', end='\n')
             
 
         logger.info(f'[{status_code}] => {target_url:50.50s}')
