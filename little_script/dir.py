@@ -79,7 +79,7 @@ def make_requests(url, proxy, timeout, logger):
                                   proxies={'http': proxy, 'https': proxy},
                                   timeout=timeout).status_code
 
-        time = get_date_time("%H:%M:%S")
+        #time = get_date_time("%H:%M:%S")
 
         message = f'\t Code={status_code}\t{path:50.50s}'
 
