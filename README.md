@@ -15,15 +15,13 @@ this repo is not only my github_description but also the notes on it.
 
 Thank u for your watching and star.
 
-INFO:[Esonhugh's Blog](https://esonhugh.github.io/tabs/about)
+### - INFO:[Esonhugh's Blog](https://esonhugh.github.io/tabs/about)
 
 ![Esonhugh's github stats](https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true)
 
 ### - I like
 <p align="left">
-
   <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
-
   <img src="https://raw.githubusercontent.com/Quadrified/Quadrified/master/assets/svg/dev/languages/python.svg" alt="Python" style="vertical-align:top; margin:4px">
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/misc/firefox.svg" alt="firefox" style="vertical-align:top; margin:4px">
   <img src="https://github.com/Quadrified/Quadrified/blob/master/assets/svg/dev/languages/html.svg" alt="html" style="vertical-align:top; margin:4px">
@@ -35,9 +33,7 @@ INFO:[Esonhugh's Blog](https://esonhugh.github.io/tabs/about)
 </p>
 <!--
 **Esonhugh/Esonhugh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
