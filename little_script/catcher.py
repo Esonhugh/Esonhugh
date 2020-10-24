@@ -1,14 +1,9 @@
 import os
-from bs4 import BeautifulSoup as bs
-get_html = os.popen("curl http://www.mca.gov.cn//article/sj/xzqh/2020/2020/2020092500801.html")
-soup = bs(get_html,'html.parser')
-
-print(soup)
-
-
-print(soup.title)
-
-print(dir(soup.file))
-
-
-print(soup.find_all('p',class_='div'))
+from bs4 import BeautifulSoup
+html_response = os.popen("curl http://zhaobiao.hdu.edu.cn/82/list.htm/").read()
+tags = BeautifulSoup(html_response,'html.parser').final_all('a')
+num = 0
+for tag in tags:
+    if "公告" in tag.strings:
+        num += 1
+print(num)
