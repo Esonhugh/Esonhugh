@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
 
 #define MAXLINE 200
 
@@ -42,6 +43,7 @@ int main(){
 		for(int i=0;str[i] != '\0';i--){
 			if( is_uper(str[i]) ){
 				str[i] = str[i] + 32;
+				//tolower(str[i]);
 			}
 		}
 	}else if(number_of_down <= number_of_uper){
@@ -49,6 +51,7 @@ int main(){
 		for (int i=0;str[i] != '\0';i++){
 			if( is_down(str[i]) ){
 				str[i] = str[i] - 32;
+				//toupper(str[i]);
 			}
 		}
 	}
@@ -57,29 +60,3 @@ int main(){
 	printf("The final is %s",str);
 	return 0;
 }
-
-
-/**
-char *UP(char strings[MAXLINE]){
-	for (int i=1;strings[i] != '\0';i++){
-		if(strings[i] <= && strings[i] >=){
-			strings[i] = strings[i] + 32;
-		}else{
-		
-		}
-	}
-	printf("The final is %s",strings);
-	return strings;
-}
-char *DOWN(char strings[MAXLINE]){
-	for(int i=1;strings[i] != '\0';i--){
-		if(strings[i] <= && strings[i] ){
-			strings[i] = strings[i] - 32;
-		}else{
-			
-		}
-	}
-	printf("The final is %s\n");
-	return strings;
-}
-**/
