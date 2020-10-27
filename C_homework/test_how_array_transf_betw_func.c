@@ -10,11 +10,13 @@ int main(){
 	
 	printf("The source strings:");
 	fgets(str,200,stdin);
-	char out[200];
-	encrypt(str);
-//	out[] = *encrypt(str);
-//	printf("The final is %s",out);
 	
+	char *out;
+//	encrypt(str);
+
+	out = encrypt(str);
+	printf("The final is %s\n",out);
+
 	return 0;
 }
 
@@ -26,6 +28,7 @@ char *encrypt(char strings[200]){
 			strings[i] = strings[i] + 1;
 		}
 	}
-	printf("The final is %s",strings);
-	return &strings;
+	
+//	printf("The final is %s",strings);
+	return &strings[0];
 }
