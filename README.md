@@ -19,7 +19,7 @@ Thank u for your watching and star.
 
 ![Esonhugh's github stats](https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true)
 
-# - I like: ![Ruby](https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg)
+# - I like: <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width=20px alt="coolRuby"></img>
 
 <p align="left">
   <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
