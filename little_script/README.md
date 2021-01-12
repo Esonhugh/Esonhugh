@@ -2,4 +2,6 @@
 
 NOTHING BUT SHIT
 
+<!-- flag{eson+hugh+is+fucking+FW} -->
+
 <!-- FUCK YOU HELPER -->
