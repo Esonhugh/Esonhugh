@@ -34,7 +34,6 @@ Thank u for your watching and star.
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/security.svg" alt="security" style="vertical-align:top;margin:4px">
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/telegram.svg" alt="telegram" style="vertical-align:top;margin:4px">
 </p>
-<img/onload="alert(1)">
 <!--
 **Esonhugh/Esonhugh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 Here are some ideas to get you started:
