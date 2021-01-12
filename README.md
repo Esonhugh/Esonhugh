@@ -18,6 +18,7 @@ Thank u for your watching and star.
 # - INFO:[Esonhugh's Blog](https://esonhugh.me/tabs/about)
 
 ![Esonhugh's github stats](https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=esonhugh&layout=compact">
 
 # - I like: <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width=20px alt="coolRuby"></img>
 
