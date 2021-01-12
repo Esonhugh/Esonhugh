@@ -15,11 +15,12 @@ this repo is not only my github_description but also the notes on it.
 
 Thank u for your watching and star.
 
-# - INFO:[Esonhugh's Blog](https://esonhugh.github.io/tabs/about)
+# - INFO:[Esonhugh's Blog](https://esonhugh.me/tabs/about)
 
 ![Esonhugh's github stats](https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true)
 
-# - I like: 
+# - I like: <img/src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width=20px>
+
 <p align="left">
   <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/misc/chrome.svg" alt"Chrome"  style="vertical-align:top; margin:4px">
