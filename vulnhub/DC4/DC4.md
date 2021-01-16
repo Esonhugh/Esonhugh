@@ -1,12 +1,11 @@
----
-
----
-
 # discover
 
-find ip
+## ip
+直接使用arp-scan扫描得出结果
 
 192.168.31.241  00:0c:29:2d:55:4f       VMware, Inc.
+
+## services
 
 rustscan 
 ``` bash
@@ -16,10 +15,38 @@ rustscan 192.168.31.241 --ulimit 5000 -- -A
 | .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
 `-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
 Faster Nmap scanning with Rust
+
+<<<<infomation missing!!!!!!!!!!>>>>
+
+开放端口为 
+端口|服务
+---|---
+22|ssh 
+80|ngnix-1.15.10
+
+```
+
+## rest infomation
+
+我经历了一些目录爆破和密码爆破 并且此处使用了hydra
+
+
+
+
+
+但是没有什么特别重要的
+
+主要是一些失败的尝试
+
+
+
+
+run on hydra 然后我找到了很多错误的结果
+
 Disk Usage lovely
  jessica
 1 of 1 target successfully completed, 16 valid passwords found
-```
+
 > for format is 
 >``` bash
 >sed 's/ //g'
@@ -136,14 +163,7 @@ done
 No encoder specified, outputting raw payload
 Payload size: 1115 bytes
 Saved as: ./shell.php
-                                                                                                            
-┌──(kali㉿Esonhugh)-[~]
-└─$ ls
-burp         githubProject  PHPstorm          RubymineProjects  Zlinux-exp-suggester2
-burpProject  go             PhpstormProjects  shell.php         zsh
-cmd.py       john-pass      powercat.ps1      someinfo          zshrc_backup
-Desktop      openvpn        RubyMine          vulmap
-                                                                                                            
+
 ┌──(kali㉿Esonhugh)-[~]
 └─$ python -m http.server
 python3 is default python version in python command which created by alias
