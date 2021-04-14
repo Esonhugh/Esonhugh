@@ -7,7 +7,7 @@ this is Esonhugh_skyworship's Github
 this repo is not only my github_description but also the notes on it.
 
 
-📫 How to reach me: esonhugh@esonhugh.me or [Telegram](https://t.me/esonhugh_skywalker)
+📫 How to reach me: <esonhugh@pwnwiki.org> , <esonhughoutside@gmail.com> or [Telegram](https://t.me/esonhugh_skywalker)
 
 
 🌱 I’m currently learning web,python and bash,even the most basic one : C/C++
