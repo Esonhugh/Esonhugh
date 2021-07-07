@@ -23,7 +23,7 @@ Thank u for your watching and star.
   </br>
   <img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship.png">
   </br>
-  <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=Esonhugh">
+  <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=Esonhugh" width=415px height=310px >
 </center>
 
 # - I like: <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width=20px alt="coolRuby"></img>
