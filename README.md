@@ -21,7 +21,6 @@ Thank u for your watching and star.
   <img src="https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true">
   <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=esonhugh&layout=compact" width=415px height=310px> -->
   </br>
-  <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=Esonhugh" width=415px height=310px >
 </center>
 
 
