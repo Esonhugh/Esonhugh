@@ -20,6 +20,11 @@ Thank u for your watching and star.
 <img src="https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true">
 <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=esonhugh&layout=compact" width=415px height=310px> -->
 
+<center>
+<img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship.png" alt="TryHackMe">
+</center>
+
+
 # - I like: <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width=20px alt="coolRuby"></img>
 
 <p align="left">
