@@ -46,7 +46,7 @@ Thank u for your watching and star.
 
 # - Badge:
 <center>
-<img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship.png" alt="TryHackMe">
+<img src="TryHackMe.png" alt="TryHackMe">
 </center>
 
 <!--
