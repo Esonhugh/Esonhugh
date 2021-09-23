@@ -7,7 +7,7 @@ this is Esonhugh_skyworship's Github
 this repo is not only my github_description but also the notes on it.
 
 
-📫 How to reach me: esonhugh@esonhugh.me or [Telegram](https://t.me/esonhugh_skywalker)
+📫 How to reach me: <esonhughoutside@gmail.com> or [Telegram](https://t.me/esonhugh_skywalker)
 
 
 🌱 I’m currently learning web,python and bash,even the most basic one : C/C++
@@ -17,8 +17,12 @@ Thank u for your watching and star.
 
 # - INFO:[Esonhugh's Blog](https://esonhugh.me/tabs/about)
 
-<img src="https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true">
-<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=esonhugh&layout=compact" width=415px height=310px> -->
+<center>
+  <img src="https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true">
+  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=esonhugh&layout=compact" width=415px height=310px> -->
+  </br>
+  <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=Esonhugh" width=415px height=310px >
+</center>
 
 <center>
 <img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship.png" alt="TryHackMe">
@@ -41,6 +45,12 @@ Thank u for your watching and star.
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/security.svg" alt="security" style="vertical-align:top;margin:4px">
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/telegram.svg" alt="telegram" style="vertical-align:top;margin:4px">
 </p>
+
+# - Badge:
+<!--
+<img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship" alt="TryHackMe Badge">
+-->
+
 <!--
 **Esonhugh/Esonhugh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 Here are some ideas to get you started:
