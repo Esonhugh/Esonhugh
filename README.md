@@ -24,9 +24,7 @@ Thank u for your watching and star.
   <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=Esonhugh" width=415px height=310px >
 </center>
 
-<center>
-<img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship.png" alt="TryHackMe">
-</center>
+
 
 
 # - I like: <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width=20px alt="coolRuby"></img>
@@ -47,9 +45,9 @@ Thank u for your watching and star.
 </p>
 
 # - Badge:
-<!--
-<img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship" alt="TryHackMe Badge">
--->
+<center>
+<img src="https://tryhackme-badges.s3.amazonaws.com/Skyworship.png" alt="TryHackMe">
+</center>
 
 <!--
 **Esonhugh/Esonhugh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
