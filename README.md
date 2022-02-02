@@ -46,6 +46,7 @@ Thank u for your watching and star.
 # - Badge:
 <center>
 <img src="TryHackMe.png" alt="TryHackMe">
+<img src="HackTheBox.png" alt='HackTheBox'>
 </center>
 
 <!--
