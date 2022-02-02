@@ -7,7 +7,8 @@ this is Esonhugh_skyworship's Github
 this repo is not only my github_description but also the notes on it.
 
 
-📫 How to reach me: <admin@eson.ninja> or [Telegram](https://t.me/esonhugh_skywalker)
+📫 How to reach me: <github@eson.ninja> or [Telegram](https://t.me/esonhugh_skywalker)
+
 
 
 🌱 I’m currently learning web,python and bash,even the most basic one : C/C++
@@ -15,7 +16,7 @@ this repo is not only my github_description but also the notes on it.
 
 Thank u for your watching and star.
 
-# - INFO:[Esonhugh's Blog](https://esonhugh.me/tabs/about)
+# - INFO:[Esonhugh's Blog](https://eson.ninja/)
 
 <center>
   <img src="https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true">
