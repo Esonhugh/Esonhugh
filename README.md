@@ -69,8 +69,8 @@ Thank u for your watching and star.
 
 ## - Src/CVE:
 
-- [Tencent Src 个人主页](https://security.tencent.com/index.php/user/p/FC955A65213EFD9B0DC0BE1A74FF3BF9)
-- [CVE-2022-27103](https://www.cvedetails.com/cve/CVE-2022-27103/)
+- [Tencent Src](https://security.tencent.com/index.php/user/p/FC955A65213EFD9B0DC0BE1A74FF3BF9) - 腾讯 Src 个人主页
+- [CVE-2022-27103](https://www.cvedetails.com/cve/CVE-2022-27103/) - Element-plus show-overflow-tooltip XSS
 
 ## - Badge:
 
