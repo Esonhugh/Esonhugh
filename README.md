@@ -66,7 +66,12 @@ Thank u for your watching and star.
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/misc/security.svg" alt="security" style="vertical-align:top;margin:4px">
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/telegram.svg" alt="telegram" style="vertical-align:top;margin:4px">
 -->
-  
+
+## - Src/CVE:
+
+- [Tencent Src 个人主页](https://security.tencent.com/index.php/user/p/FC955A65213EFD9B0DC0BE1A74FF3BF9)
+- [CVE-2022-27103](https://www.cvedetails.com/cve/CVE-2022-27103/)
+
 ## - Badge:
 
 ![TryHackMe](TryHackMe.png)
