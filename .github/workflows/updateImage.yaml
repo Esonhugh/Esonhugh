@@ -1,0 +1,18 @@
+name: Update THM and HTB image
+on:
+    schedule: [{cron: '0 0 * * *'}]
+    workflow_dispatch:
+    push: {branches: [master]}
+jobs:
+    update_thm:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - run: |
+                source updateImage.sh
+                updateImage
+                git config user.name github-actions
+                git config user.email github-actions@github.com
+                git add .
+                git commit -m "UpdateImage"
+                git push

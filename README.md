@@ -10,10 +10,13 @@ this is Esonhugh Skyworship's Github
 
 Thank u for your watching and star.
 
+![Metrics](/github-metrics.svg)
+
+<!--
 ## - Info: [Esonhugh's Blog](https://eson.ninja/)
 
 <img src="https://github-readme-stats.vercel.app/api?username=esonhugh&show_icons=true&theme=tokyonight&count_private=true">
-  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=esonhugh&layout=compact" width=415px height=310px> -->
+  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=esonhugh&layout=compact" width=415px height=310px> 
 
 ## - Tech Stack
 
@@ -24,35 +27,35 @@ Thank u for your watching and star.
   </div>
   <div>
   <h3> Shell like </h3>
-  <!-- bash -->
+  <!-- bash 
   <img src="https://github.com/Quadrified/Quadrified/blob/master/assets/svg/dev/tools/bash.svg" alt="bash" style="vertical-align:top; margin:4px">
-  <!-- powershell -->
+  <!-- powershell 
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/png/dev/tools/powershell.png" alt="powershell" style="vertical-align:top;margin:4px">
   </div>
   <div>
   <h3> Lang like </h3>
-  <!-- golang -->
+  <!-- golang 
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/go.svg" alt="golang" style="vertical-align:top;margin:4px">
-  <!-- python -->
+  <!-- python 
   <img src="https://raw.githubusercontent.com/Quadrified/Quadrified/master/assets/svg/dev/languages/python.svg" alt="python" style="vertical-align:top; margin:4px">
   </div>
   <div>
   <h3> Cloud Native </h3>
-  <!-- docker -->
+  <!-- docker 
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/tools/docker.svg" alt="docker" style="vertical-align:top; margin:4px">
-  <!-- k8s -->
+  <!-- k8s 
  <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/png/dev/services/kubernetes.png" alt="kubernetes" style="vertical-align:top; margin:4px">
-  <!-- cloud -->
+  <!-- cloud 
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/png/dev/misc/cloud.png" alt="cloud" style="vertical-align:top; margin:4px">
   </div>
   <h3> Misc </h3>
-  <!-- web -->
+  <!-- web 
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/4a38660afb7be89a6032218589b4454a1285c7f8/png/dev/misc/web.png" alt="web" style="vertical-align:top; margin:4px">
-  <!-- cisco -->
+  <!-- cisco 
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/raw/master/svg/devices/cisco.svg" alt="cisco" style="vertical-align:top; margin:4px">
 </div>
 
-  <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
+  <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges 
   <!--
   <img src="https://github.com/MikeCodesDotNET/ColoredBadges/blob/master/svg/dev/misc/chrome.svg" alt="Chrome"  style="vertical-align:top; margin:4px">
   
@@ -67,15 +70,15 @@ Thank u for your watching and star.
   <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/social/telegram.svg" alt="telegram" style="vertical-align:top;margin:4px">
 -->
 
-## - Src/CVE:
+### Src/CVE:
 
 - [Tencent Src](https://security.tencent.com/index.php/user/p/FC955A65213EFD9B0DC0BE1A74FF3BF9) - 腾讯 Src 个人主页
 - [CVE-2022-27103](https://www.cvedetails.com/cve/CVE-2022-27103/) - Element-plus show-overflow-tooltip XSS
 
-## - Badge:
+### - Badge:
 
-![TryHackMe](TryHackMe.png)
-![HackTheBox](HackTheBox.png)
+![TryHackMe](img/TryHackMe.png)
+![HackTheBox](img/HackTheBox.png)
 
 <!--
 **Esonhugh/Esonhugh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
