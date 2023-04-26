@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # token: ${{ secrets.METRICS_TOKEN }}
-          token: ${{ github.token }}
+          token: ${{ secrets.GH_PRESONALTOKEN }}
+          #token: ${{ github.token }}
           retries: 3
           retries_delay: 300
           retries_output_action: 5
