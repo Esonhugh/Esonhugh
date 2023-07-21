@@ -24,21 +24,30 @@ jobs:
           template: classic
           base: activity, community, repositories, metadata
           base_hireable: yes
+
+          plugin_gists: yes
+
+          plugin_traffic: yes
+
           config_display: large
           config_timezone: Asia/Shanghai
+
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_secrets: yes
           plugin_achievements_threshold: B
+          
           plugin_activity: yes
           plugin_activity_days: 14
           plugin_activity_filter: all
           plugin_activity_limit: 5
           plugin_activity_load: 300
-          plugin_activity_visibility: all
+          plugin_activity_visibility: public
+          
           plugin_followup: yes
           plugin_followup_archived: yes
           plugin_followup_sections: repositories
+          
           plugin_habits: yes
           plugin_habits_charts_type: classic
           plugin_habits_days: 14
@@ -46,8 +55,10 @@ jobs:
           plugin_habits_from: 200
           plugin_habits_languages_limit: 8
           plugin_habits_languages_threshold: 0%
+          
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
@@ -59,9 +70,21 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-          plugin_projects: yes
+          
+          plugin_projects: no
           plugin_projects_limit: 4
+
           plugin_rss: yes
           plugin_rss_limit: 4
           plugin_rss_source: https://eson.ninja/atom.xml
+
+          plugin_people: yes
+          plugin_people_limit: 24
+          plugin_people_identicons: yes
+          plugin_people_types: contributors, stargazers, watchers, sponsors
+
+          plugin_16personalities: yes
+          plugin_16personalities_url: https://www.16personalities.com/profiles/dbb951afa8e4d
+          plugin_16personalities_sections: personality, profile, traits
+          plugin_16personalities_scores: yes
           
