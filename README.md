@@ -77,10 +77,10 @@ Thank u for your watching and star.
 
 - [Wiz EKS Cluster Challenge WP](https://github.com/Esonhugh/WizEKSClusterGame)
 - [Attack Code](https://github.com/Esonhugh/Attack_Code)
-- [Docker Release Agent Escape Note - IDEA from BlackHat2019](https://github.com/Esonhugh/Docker-Release-Agent-Escape)
+- [Docker Release Agent Escape Note - research from BlackHat2019](https://github.com/Esonhugh/Docker-Release-Agent-Escape)
 - [Kubernetes realworld hacking - SpringCloud Heapdump => Cluster Admin](https://github.com/Esonhugh/SpringCloudHeapdump)
 - [Devstream ConfigFile Command Injection Sink](https://github.com/Esonhugh/Devstream-ConfigFile-Command-Injection)
-- [AI Enhanced Hacking](https://github.com/Esonhugh/AI-Enhanced-hacking)
+- [AI Enhanced Pentesting](https://github.com/Esonhugh/AI-Enhanced-hacking)
 
 ### - Badge:
 
