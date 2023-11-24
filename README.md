@@ -34,6 +34,7 @@ Thank u for your watching and star.
 ### - Tools 
 
 - [Shell Script manager - ShellScriptSnippet aka SSS ](https://github.com/Esonhugh/ShellScriptSnippet)
+- [Weaponized VSCode Project workspace with python msf and other hack tools](https://github.com/Esonhugh/CreateHackingEnv)
 
 ### - "API" SDK (unstable) And Skeleton Project
 
