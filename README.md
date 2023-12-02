@@ -10,6 +10,12 @@ this is Esonhugh Skyworship's Github
 
 Thank u for your watching and star.
 
+## - Sponsor
+
+[afdian](https://afdian.net/a/esonhugh)
+
+..To Be continue.
+
 ## - Badge:
 
 ![TryHackMe](img/TryHackMe.png)
@@ -67,6 +73,8 @@ Thank u for your watching and star.
 ## - Metrics
 
 ![Metrics](/github-metrics.svg)
+
+
 
 <!--
 **Esonhugh/Esonhugh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
