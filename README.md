@@ -28,6 +28,7 @@ Thank u for your watching and star.
 
 ## - Articles You never want miss:
 
+- [Kubernetes Common/Custom Resources injection Attack](https://github.com/Esonhugh/KubernetesCRInjection)
 - [Wiz EKS Cluster Challenge WP](https://github.com/Esonhugh/WizEKSClusterGame)
 - [Attack Code](https://github.com/Esonhugh/Attack_Code)
 - [Docker Release Agent Escape Note - research from BlackHat2019](https://github.com/Esonhugh/Docker-Release-Agent-Escape)
