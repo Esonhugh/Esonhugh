@@ -42,6 +42,7 @@ Thank u for your watching and star.
 
 - [Shell Script manager - ShellScriptSnippet aka SSS ](https://github.com/Esonhugh/ShellScriptSnippet)
 - [Weaponized VSCode Project workspace with python msf and other hack tools](https://github.com/Esonhugh/CreateHackingEnv)
+- [Ticket Master/Token Master for forged Token/Ticket/Cookie in Cloud/VirtualMachine Platforms](https://github.com/Esonhugh/TicketMaster)
 
 ### - "API" SDK (unstable) And Skeleton Project
 
@@ -65,6 +66,11 @@ Thank u for your watching and star.
 
 - [APISIX Gateway Webshell](https://github.com/Esonhugh/apisix-webshell-rce)
 - [Yapi Webshell](https://github.com/Esonhugh/yapi-rce-webshell)
+
+### - Flipperzero developping
+
+- [KDF sample](https://github.com/Esonhugh/flipper_kdf)
+- [UFBT Application Guide](https://github.com/Esonhugh/flipperzero_ufbt_application_howto)
 
 ### - Helm Charts
 
