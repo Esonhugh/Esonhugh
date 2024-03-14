@@ -40,7 +40,7 @@ Thank u for your watching and star.
 <div>
 <h5 style="text-align:center">K8s-Lan-Party</h5>
 <center>
-<img src="img/K8sLanParty.png" alt="K8s-Lan-Party" onclick="window.open('https://k8slanparty.com/finisher/i86o3LKK')">
+<img src="img/K8sLanParty.png" alt="K8s-Lan-Party" onclick="window.open('https://k8slanparty.com/finisher/i86o3LKK')" width=500px>
 </center>
 </div>
 
