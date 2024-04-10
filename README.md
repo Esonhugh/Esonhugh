@@ -68,6 +68,7 @@ Thank u for your watching and star.
 - [Weaponized VSCode Project workspace with python msf and other hack tools](https://github.com/Esonhugh/CreateHackingEnv)
 - [Ticket Master/Token Master for forged Token/Ticket/Cookie in Cloud/VirtualMachine Platforms](https://github.com/Esonhugh/TicketMaster)
 - [Aliyun System managed Policies json and crawler](https://github.com/Esonhugh/aliyun-system-managed)
+- [Kubernetes DNS based service discovery tool (no need service account)](https://github.com/Esonhugh/k8spider)
 
 ### - "API" SDK (unstable) And Skeleton Project
 
