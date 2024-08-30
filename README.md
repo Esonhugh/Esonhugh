@@ -12,8 +12,6 @@ Thank u for your watching and star.
 
 ## - Sponsor
 
-[afdian](https://afdian.net/a/esonhugh) - for Chinese sponsor.
-
 [Patreon](https://www.patreon.com/Skyworshiper) - paid documents articles.
 
 ..To Be continue.
