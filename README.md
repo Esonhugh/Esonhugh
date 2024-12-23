@@ -18,30 +18,33 @@ Thank u for your watching and star.
 
 ## - Badge:
 
-![TryHackMe](img/TryHackMe.png)
-![HackTheBox](img/HackTheBox.png)
 
+|<img src="img/TryHackMe.png" alt="tryhackme" onclick="window.open('https://tryhackme.com/r/p/Skyworship')" width=275px>|<img src="img/HackTheBox.png" alt="hackthebox" onclick="window.open('https://app.hackthebox.com/profile/799295')" width=275px>|<img alt="CKA" src="img/CKA.png" width=250px>|
+|---|---|---|
+|<img src="img/BigIAM.png" alt="BigIAMChallenge" onclick="window.open('https://bigiamchallenge.com/finisher/CyJXarXN')" width=275px>|<img src="img/EKSCluster.png" alt="EKSClusterGame" onclick="window.open('https://eksclustergames.com/finisher/PZvZHMmu')" width=275px>|<img src="img/K8sLanParty.png" alt="K8s-Lan-Party" onclick="window.open('https://k8slanparty.com/finisher/i86o3LKK')" width=275px>|
+
+<!--
 <div>
 <h5 style="text-align:center">BigIAMChallenge</h5>
 <center>
-<img src="img/BigIAM.png" alt="BigIAMChallenge" onclick="window.open('https://bigiamchallenge.com/finisher/CyJXarXN')" width=500px>
+<img src="img/BigIAM.png" alt="BigIAMChallenge" onclick="window.open('https://bigiamchallenge.com/finisher/CyJXarXN')" width=100px>
 </center>
 </div>
 
 <div>
 <h5 style="text-align:center">EKSClusterGame</h5>
 <center>
-<img src="img/EKSCluster.png" alt="EKSClusterGame" onclick="window.open('https://eksclustergames.com/finisher/PZvZHMmu')" width=500px>
+<img src="img/EKSCluster.png" alt="EKSClusterGame" onclick="window.open('https://eksclustergames.com/finisher/PZvZHMmu')" width=100px>
 </center>
 </div>
 
 <div>
 <h5 style="text-align:center">K8s-Lan-Party</h5>
 <center>
-<img src="img/K8sLanParty.png" alt="K8s-Lan-Party" onclick="window.open('https://k8slanparty.com/finisher/i86o3LKK')" width=500px>
+<img src="img/K8sLanParty.png" alt="K8s-Lan-Party" onclick="window.open('https://k8slanparty.com/finisher/i86o3LKK')" width=100px>
 </center>
 </div>
-
+-->
 
 ## - Vulnerabilities (CVE/SRC):
 
