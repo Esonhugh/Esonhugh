@@ -70,7 +70,7 @@ Thank u for your watching and star.
 - [Weaponized VSCode Project workspace with python msf and other hack tools](https://github.com/Esonhugh/CreateHackingEnv)
 - [Ticket Master/Token Master for forged Token/Ticket/Cookie in Cloud/VirtualMachine Platforms](https://github.com/Esonhugh/TicketMaster)
 - [Aliyun System managed Policies json and crawler](https://github.com/Esonhugh/aliyun-system-managed)
-- [Kubernetes DNS based service discovery tool (no need service account)](https://github.com/Esonhugh/k8spider)
+- [Kubernetes low priv enumeration tool (no need service account)](https://github.com/Esonhugh/k8spider)
 - [Gopherus3 Python3 gopherus](https://github.com/Esonhugh/Gopherus3)
 - [ProxyInBrowser - XSS exploitation with Websocket, which create http proxy to relay request via victim browser](https://github.com/Esonhugh/ProxyInBrowser)
 
