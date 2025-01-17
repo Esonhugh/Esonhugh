@@ -55,6 +55,7 @@ Thank u for your watching and star.
 
 - [Kubernetes Common/Custom Resources injection Attack](https://github.com/Esonhugh/KubernetesCRInjection)
 - [Wiz EKS Cluster Challenge WP](https://github.com/Esonhugh/WizEKSClusterGame)
+- [HackTheBox Business CTF 2024 WP](https://github.com/Esonhugh/HTB-BusinessCTF-2024-Cloud)
 - [Attack Code](https://github.com/Esonhugh/Attack_Code)
 - [Kubernetes has its own "ADCS", kubernetes ceritification security -- How To Backdoor a Kubernetes in silence and more persistent?](https://github.com/Esonhugh/KubernetesCS)
 - [Docker Release Agent Escape Note - research from BlackHat2019](https://github.com/Esonhugh/Docker-Release-Agent-Escape)
