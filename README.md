@@ -53,15 +53,10 @@ Thank u for your watching and star.
 
 ## - Articles You never want miss:
 
-- [Kubernetes Common/Custom Resources injection Attack](https://github.com/Esonhugh/KubernetesCRInjection)
-- [Wiz EKS Cluster Challenge WP](https://github.com/Esonhugh/WizEKSClusterGame)
-- [HackTheBox Business CTF 2024 WP](https://github.com/Esonhugh/HTB-BusinessCTF-2024-Cloud)
 - [Attack Code](https://github.com/Esonhugh/Attack_Code)
-- [Kubernetes has its own "ADCS", kubernetes ceritification security -- How To Backdoor a Kubernetes in silence and more persistent?](https://github.com/Esonhugh/KubernetesCS)
-- [Docker Release Agent Escape Note - research from BlackHat2019](https://github.com/Esonhugh/Docker-Release-Agent-Escape)
-- [Kubernetes realworld hacking - SpringCloud Heapdump => Cluster Admin](https://github.com/Esonhugh/SpringCloudHeapdump)
 - [Devstream ConfigFile Command Injection Sink](https://github.com/Esonhugh/Devstream-ConfigFile-Command-Injection)
 - [AI Enhanced Pentesting](https://github.com/Esonhugh/AI-Enhanced-hacking)
+- [my cloud security articles](https://github.com/Esonhugh/My-Cloud-Security)
 
 ## - I'm also write some codes ;)
 
@@ -70,10 +65,10 @@ Thank u for your watching and star.
 - [Shell Script manager - ShellScriptSnippet aka SSS ](https://github.com/Esonhugh/ShellScriptSnippet)
 - [Weaponized VSCode Project workspace with python msf and other hack tools](https://github.com/Esonhugh/CreateHackingEnv)
 - [Ticket Master/Token Master for forged Token/Ticket/Cookie in Cloud/VirtualMachine Platforms](https://github.com/Esonhugh/TicketMaster)
-- [Aliyun System managed Policies json and crawler](https://github.com/Esonhugh/aliyun-system-managed)
 - [Kubernetes low priv enumeration tool (no need service account)](https://github.com/Esonhugh/k8spider)
 - [Gopherus3 Python3 gopherus](https://github.com/Esonhugh/Gopherus3)
 - [ProxyInBrowser - XSS exploitation with Websocket, which create http proxy to relay request via victim browser](https://github.com/Esonhugh/ProxyInBrowser)
+- [ConsoleHook - a tool for you to analyze obfed javascript frontends](https://github.com/esonhugh/ConsoleHook)
 
 ### - "API" SDK (unstable) And Skeleton Project
 
@@ -82,7 +77,6 @@ Thank u for your watching and star.
 - [(template) Go cobra cli tools template](https://github.com/Esonhugh/fast-cli-template)
 - [ \[Out of Date\] Openai platform API for API Key management](https://github.com/Esonhugh/OpenAI-Platform-API)
 - [Tencent Coding API](https://github.com/Esonhugh/tencent-coding-openapi)
-- [Common AWS like Cloud Policy parser](https://github.com/Esonhugh/CloudPolicy)
 
 ### - POC Based
 
