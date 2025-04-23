@@ -69,6 +69,7 @@ Thank u for your watching and star.
 - [Gopherus3 Python3 gopherus](https://github.com/Esonhugh/Gopherus3)
 - [ProxyInBrowser - XSS exploitation with Websocket, which create http proxy to relay request via victim browser](https://github.com/Esonhugh/ProxyInBrowser)
 - [ConsoleHook - a tool for you to analyze obfed javascript frontends](https://github.com/esonhugh/ConsoleHook)
+- [Sliver TCP Stager helper - for Windows staged payload and linux staged pauload generator and hoster](https://github.com/Esonhugh/sliver-stage-helper)
 
 ### - "API" SDK (unstable) And Skeleton Project
 
@@ -91,6 +92,8 @@ Thank u for your watching and star.
 
 - [APISIX Gateway Webshell](https://github.com/Esonhugh/apisix-webshell-rce)
 - [Yapi Webshell](https://github.com/Esonhugh/yapi-rce-webshell)
+
+- [Ingress Nightmare - kubernetes ingress controller remote rce exploitation](https://github.com/Esonhugh/ingressNightmare-CVE-2025-1974-exps)
 
 ### - Flipperzero developping
 
