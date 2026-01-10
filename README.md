@@ -57,6 +57,7 @@ Thank u for your watching and star.
 - [Devstream ConfigFile Command Injection Sink](https://github.com/Esonhugh/Devstream-ConfigFile-Command-Injection)
 - [AI Enhanced Pentesting](https://github.com/Esonhugh/AI-Enhanced-hacking)
 - [my cloud security articles](https://github.com/Esonhugh/My-Cloud-Security)
+- [How AI kills the vshell](https://github.com/Esonhugh/How-AI-Kills-the-VShell)
 
 ## - I'm also write some codes ;)
 
